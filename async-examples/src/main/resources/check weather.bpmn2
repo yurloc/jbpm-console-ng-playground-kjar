@@ -180,14 +180,15 @@
       <bpmn2:incoming>_7816DB91-1130-49D7-90B4-2ED47A363087</bpmn2:incoming>
       <bpmn2:outgoing>_6D83BCB9-BF17-4263-B8E8-8A6C08939CE8</bpmn2:outgoing>
       <bpmn2:script><![CDATA[String info = "Response is operation executed successfully:" + weather.success;
-info = info + "\n City:" + weather.city;
-info = info + "\n State: " + weather.state;
-info = info + "\n Description: " + weather.description;
-info = info + "\n Temperature :" + weather.temperature;
-info = info + "\n Wind: "+ weather.wind;
-info = info + "\n Visibility: " + weather.visibility;
-info = info + "\n Remarks : " + weather.remarks;
-System.out.println(info);
+info = info + "%n City:" + weather.city;
+info = info + "%n State: " + weather.state;
+info = info + "%n Description: " + weather.description;
+info = info + "%n Temperature :" + weather.temperature;
+info = info + "%n Wind: "+ weather.wind;
+info = info + "%n Visibility: " + weather.visibility;
+info = info + "%n Remarks : " + weather.remarks;
+info = info + "%n"
+System.out.printf(info);
 kcontext.setVariable("weather", null);
 kcontext.setVariable("weatherInfo", info);]]></bpmn2:script>
     </bpmn2:scriptTask>

@@ -245,8 +245,8 @@
       <bpmn2:incoming>_7C032B11-46FC-4599-94B7-8FCA9AA05437</bpmn2:incoming>
       <bpmn2:outgoing>_3357BAA4-262A-41BA-9C29-7845432CCB8A</bpmn2:outgoing>
       <bpmn2:script><![CDATA[System.out.println("Sending Proposal to: "+mail);
-System.out.println(" \t Acme Inc. offers you:  "+offering);
-System.out.println(" \t For the Software Developer Position");]]></bpmn2:script>
+System.out.println("          Acme Inc. offers you:  "+offering);
+System.out.println("          For the Software Developer Position");]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_7C032B11-46FC-4599-94B7-8FCA9AA05437" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_12435ADA-3C57-414C-8DDD-5D236E462BD8" targetRef="_3D70555E-A579-4431-A465-21B085906EEF"/>
     <bpmn2:userTask id="_D9B752FE-4900-4172-B8C9-31CC838E18A5" drools:selectable="true" drools:taskName="SignContract" drools:scriptFormat="http://www.java.com/java" name="Sign Contract">
