@@ -51,7 +51,16 @@
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_GJuhYdf4EeKnTc15_TtiWg">_E2968952-3CAE-467C-85B2-09E976303EEF_TaskNameInput</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
-      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos4, Task2: " + new java.util.Date());\n\nSystem.out.println("Invoice: " + invoice);\nSystem.out.println("Creating invoice");\n\ninvoice = new org.kie.test.Invoice();\ninvoice.setNumber("1");\ninvoice.setClient("Client 1");\nkcontext.setVariable("invoice", invoice);\n]]></bpmn2:script>
+      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos4, Task2: " + new java.util.Date());
+
+System.out.println("Invoice: " + invoice);
+System.out.println("Creating invoice");
+
+invoice = new org.kie.test.Invoice();
+invoice.setNumber("1");
+invoice.setClient("Client 1");
+kcontext.setVariable("invoice", invoice);
+]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_57845823-3803-4687-91DE-554F67F66CD0" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_F95046E9-4DA9-4B1B-869F-FE1B1B4D8306" targetRef="_E2968952-3CAE-467C-85B2-09E976303EEF"/>
     <bpmn2:sequenceFlow id="_ADC87278-5180-4054-BB6D-CA35636D0073" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_E2968952-3CAE-467C-85B2-09E976303EEF" targetRef="_BA62E624-13C1-44DA-9AED-9EE8C9C7A126"/>
@@ -85,7 +94,10 @@
     <bpmn2:scriptTask id="_53218B47-CB65-4ED5-AC4F-0E75B6823760" drools:selectable="true" name="Task4" scriptFormat="http://www.java.com/java">
       <bpmn2:incoming>_B93BC328-B9EA-4B7E-8502-0D2B4EECF88D</bpmn2:incoming>
       <bpmn2:outgoing>_F0A82063-43D2-4078-A5C0-C29B2B710344</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos4, Task4: " + new java.util.Date());\n\nSystem.out.println("Invoice: " + invoice);\n]]></bpmn2:script>
+      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos4, Task4: " + new java.util.Date());
+
+System.out.println("Invoice: " + invoice);
+]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_B93BC328-B9EA-4B7E-8502-0D2B4EECF88D" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_BA62E624-13C1-44DA-9AED-9EE8C9C7A126" targetRef="_53218B47-CB65-4ED5-AC4F-0E75B6823760"/>
     <bpmn2:endEvent id="_C7836203-5857-416E-992C-483A64684BE0" drools:bgcolor="#ff6347" drools:selectable="true" name="">

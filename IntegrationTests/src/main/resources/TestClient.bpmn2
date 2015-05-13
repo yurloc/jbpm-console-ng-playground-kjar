@@ -110,7 +110,11 @@
         <bpmn2:scriptTask id="_C0BEDC0C-5E97-4FF6-9D56-4409C1B71DA2" drools:selectable="true" name="Print1" scriptFormat="http://www.java.com/java">
             <bpmn2:incoming>_FFF34A65-0CC3-4A61-BC92-720CE8D7A5DB</bpmn2:incoming>
             <bpmn2:outgoing>_334CF073-989B-4CF7-86DA-6763C8E4FF5B</bpmn2:outgoing>
-            <bpmn2:script><![CDATA[System.out.println("TestClient.Print1: " + new java.util.Date());\nSystem.out.println("client: " + client);\nSystem.out.println("name: " + name);\nSystem.out.println("age: " + age);\nSystem.out.println("invoice: " + invoice);]]></bpmn2:script>
+            <bpmn2:script><![CDATA[System.out.println("TestClient.Print1: " + new java.util.Date());
+System.out.println("client: " + client);
+System.out.println("name: " + name);
+System.out.println("age: " + age);
+System.out.println("invoice: " + invoice);]]></bpmn2:script>
         </bpmn2:scriptTask>
         <bpmn2:sequenceFlow id="_FFF34A65-0CC3-4A61-BC92-720CE8D7A5DB" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_AC800A26-270E-495F-82E7-690D0692F8F4" targetRef="_C0BEDC0C-5E97-4FF6-9D56-4409C1B71DA2"/>
         <bpmn2:userTask id="_E3D45160-06E4-46E4-AFA4-79A76CFA2850" drools:selectable="true" drools:taskName="EditClient2" drools:scriptFormat="http://www.java.com/java" name="EditClient2">
@@ -193,7 +197,11 @@
         <bpmn2:scriptTask id="_6A5EFF26-BCA1-4168-815E-03E8ABC1009C" drools:selectable="true" name="Print2" scriptFormat="http://www.java.com/java">
             <bpmn2:incoming>_F14DE908-28A0-4836-869E-BB4BCDFBD3C1</bpmn2:incoming>
             <bpmn2:outgoing>_F88CF54A-F21E-49FC-992B-C19E5103D387</bpmn2:outgoing>
-            <bpmn2:script><![CDATA[System.out.println("TestClient.Print2: " + new java.util.Date());\nSystem.out.println("client: " + client);\nSystem.out.println("name:" + name);\nSystem.out.println("age: " + age);\nSystem.out.println("invoice: " + invoice);]]></bpmn2:script>
+            <bpmn2:script><![CDATA[System.out.println("TestClient.Print2: " + new java.util.Date());
+System.out.println("client: " + client);
+System.out.println("name:" + name);
+System.out.println("age: " + age);
+System.out.println("invoice: " + invoice);]]></bpmn2:script>
         </bpmn2:scriptTask>
         <bpmn2:sequenceFlow id="_F14DE908-28A0-4836-869E-BB4BCDFBD3C1" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_E3D45160-06E4-46E4-AFA4-79A76CFA2850" targetRef="_6A5EFF26-BCA1-4168-815E-03E8ABC1009C"/>
         <bpmn2:endEvent id="_020BFE68-2AB0-4D45-884B-E20D992C53A4" drools:bgcolor="#ff6347" drools:selectable="true" name="">

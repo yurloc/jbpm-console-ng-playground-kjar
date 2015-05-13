@@ -9,7 +9,10 @@
         <bpmn2:scriptTask id="_F1469755-FA36-4637-8B66-1950D0057E31" drools:selectable="true" name="PrintInvoice" scriptFormat="http://www.java.com/java">
             <bpmn2:incoming>_6B4F8C0B-B380-439A-9835-7A088CCD4BA8</bpmn2:incoming>
             <bpmn2:outgoing>_2B5E020E-8745-44C0-B949-BCB7D5DDE0DE</bpmn2:outgoing>
-            <bpmn2:script><![CDATA[System.out.println("UseInvoice, PrintInvoice: " + new java.util.Date());\nSystem.out.println("invoice: " + invoice);\n\n]]></bpmn2:script>
+            <bpmn2:script><![CDATA[System.out.println("UseInvoice, PrintInvoice: " + new java.util.Date());
+System.out.println("invoice: " + invoice);
+
+]]></bpmn2:script>
         </bpmn2:scriptTask>
         <bpmn2:sequenceFlow id="_6B4F8C0B-B380-439A-9835-7A088CCD4BA8" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_DD5D4FAF-F5B0-47CC-8F8F-CAAE976E0F67" targetRef="_F1469755-FA36-4637-8B66-1950D0057E31"/>
         <bpmn2:endEvent id="_522960D7-1042-4D28-B193-4E4250BCAA22" drools:bgcolor="#ff6347" drools:selectable="true" name="">

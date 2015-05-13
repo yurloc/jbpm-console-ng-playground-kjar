@@ -7,13 +7,28 @@
     <bpmn2:scriptTask id="_DC5034B8-1C48-4E1F-8D19-98AAE31C1436" drools:selectable="true" name="Task1" scriptFormat="http://www.java.com/java">
       <bpmn2:incoming>_95DEB720-7FF6-4B35-BE34-B13F6CC2C461</bpmn2:incoming>
       <bpmn2:outgoing>_B96B0E0D-4A59-407E-8012-E4A1C9657F9C</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos3, Task1 : " + new java.util.Date());\n\norg.kie.test.Invoice invoice1 = new org.kie.test.Invoice();\ninvoice1.setNumber("1");\ninvoice1.setClient("Client 1");\n\nSystem.out.println("XXXXXX invoice1 was created: " + invoice1);\n\n\n]]></bpmn2:script>
+      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos3, Task1 : " + new java.util.Date());
+
+org.kie.test.Invoice invoice1 = new org.kie.test.Invoice();
+invoice1.setNumber("1");
+invoice1.setClient("Client 1");
+
+System.out.println("XXXXXX invoice1 was created: " + invoice1);
+
+
+]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_95DEB720-7FF6-4B35-BE34-B13F6CC2C461" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_7FF82435-A402-4D89-A3CD-018EB95E3E43" targetRef="_DC5034B8-1C48-4E1F-8D19-98AAE31C1436"/>
     <bpmn2:scriptTask id="_DF488EA7-7523-46EA-BD80-12BDDF701757" drools:selectable="true" name="Task2" scriptFormat="http://www.java.com/java">
       <bpmn2:incoming>_B96B0E0D-4A59-407E-8012-E4A1C9657F9C</bpmn2:incoming>
       <bpmn2:outgoing>_8A97B394-F527-4DA9-A538-CC692C3020C9</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos3, Task2 : " + new java.util.Date());\n\norg.kie.test.Invoice invoice2 = new org.kie.test.Invoice();\ninvoice2.setNumber("2");\ninvoice2.setClient("Client 2");\n\nSystem.out.println("XXXXXX invoice2 was created: " + invoice2);]]></bpmn2:script>
+      <bpmn2:script><![CDATA[System.out.println("XXXXXX TestPojos3, Task2 : " + new java.util.Date());
+
+org.kie.test.Invoice invoice2 = new org.kie.test.Invoice();
+invoice2.setNumber("2");
+invoice2.setClient("Client 2");
+
+System.out.println("XXXXXX invoice2 was created: " + invoice2);]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:sequenceFlow id="_B96B0E0D-4A59-407E-8012-E4A1C9657F9C" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_DC5034B8-1C48-4E1F-8D19-98AAE31C1436" targetRef="_DF488EA7-7523-46EA-BD80-12BDDF701757"/>
     <bpmn2:endEvent id="_3AD0B2EE-4CD4-4B71-9C28-C77A9F160C64" drools:bgcolor="#ff6347" drools:selectable="true" name="">

@@ -14,7 +14,9 @@
     <bpmn2:scriptTask id="_199A4875-2069-43C2-96BA-B7E5527FB827" drools:selectable="true" name="Set user info" scriptFormat="http://www.java.com/java">
       <bpmn2:incoming>_346766CA-64F9-405A-9DFE-EB0275CBF50C</bpmn2:incoming>
       <bpmn2:outgoing>_DF980ADD-1B27-4F3C-8BE8-D52F7D920D15</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[org.jbpm.examples.data.User userIn = new org.jbpm.examples.data.User("john", 25);\nSystem.out.println("Setting up user " + userIn);\nkcontext.setVariable("user", userIn);]]></bpmn2:script>
+      <bpmn2:script><![CDATA[org.jbpm.examples.data.User userIn = new org.jbpm.examples.data.User("john", 25);
+System.out.println("Setting up user " + userIn);
+kcontext.setVariable("user", userIn);]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:endEvent id="_E78BE5CC-6662-449E-99A3-8ECF8D7B2071" drools:bgcolor="#ff6347" drools:selectable="true" name="EndProcess">
       <bpmn2:incoming>_01FEC7B2-665F-4D0E-BD12-FC5F45D92A77</bpmn2:incoming>

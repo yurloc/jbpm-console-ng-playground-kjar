@@ -228,13 +228,26 @@
                     <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="__oVEJPBREeKGYMyD1Ciehw">_F9AB22ED-3E56-4254-A243-792E2E7D394F_TaskNameInput</bpmn2:to>
                 </bpmn2:assignment>
             </bpmn2:dataInputAssociation>
-            <bpmn2:script><![CDATA[System.out.println("XXXXXX TestTypes, Task4: " + new java.util.Date());\nSystem.out.println("testTypes: " + testTypes);\nSystem.out.println("simple_string: " + simple_string);\nSystem.out.println("simple_int: " + simple_int);\nSystem.out.println("simple_float: " + simple_float);\nSystem.out.println("simple_boolean: " + simple_boolean);]]></bpmn2:script>
+            <bpmn2:script><![CDATA[System.out.println("XXXXXX TestTypes, Task4: " + new java.util.Date());
+System.out.println("testTypes: " + testTypes);
+System.out.println("simple_string: " + simple_string);
+System.out.println("simple_int: " + simple_int);
+System.out.println("simple_float: " + simple_float);
+System.out.println("simple_boolean: " + simple_boolean);]]></bpmn2:script>
         </bpmn2:scriptTask>
         <bpmn2:sequenceFlow id="_5AF8ADE3-0B5F-4630-938D-9385DCA7D5C5" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_907FFD94-DE91-4775-98A9-94E32C7EF08F" targetRef="_F9AB22ED-3E56-4254-A243-792E2E7D394F"/>
         <bpmn2:scriptTask id="_8A29570A-655F-4A1B-A441-AFC7E42979BF" drools:selectable="true" name="Task2" scriptFormat="http://www.java.com/java">
             <bpmn2:incoming>_DBA002D5-9A94-4354-916F-CDFB074F20D4</bpmn2:incoming>
             <bpmn2:outgoing>_A11EB92B-02BC-43FD-8793-B2D3F08F3485</bpmn2:outgoing>
-            <bpmn2:script><![CDATA[System.out.println("XXXXXX TestTypes, Task2: " + new java.util.Date());\nSystem.out.println("testTypes: " + testTypes);\nSystem.out.println("simple_string: " + simple_string);\nSystem.out.println("simple_int: " + simple_int);\nSystem.out.println("simple_float: " + simple_float);\nSystem.out.println("simple_boolean: " + simple_boolean);\n\n\n]]></bpmn2:script>
+            <bpmn2:script><![CDATA[System.out.println("XXXXXX TestTypes, Task2: " + new java.util.Date());
+System.out.println("testTypes: " + testTypes);
+System.out.println("simple_string: " + simple_string);
+System.out.println("simple_int: " + simple_int);
+System.out.println("simple_float: " + simple_float);
+System.out.println("simple_boolean: " + simple_boolean);
+
+
+]]></bpmn2:script>
         </bpmn2:scriptTask>
         <bpmn2:sequenceFlow id="_A11EB92B-02BC-43FD-8793-B2D3F08F3485" drools:bgcolor="#000000" drools:selectable="true" sourceRef="_8A29570A-655F-4A1B-A441-AFC7E42979BF" targetRef="_907FFD94-DE91-4775-98A9-94E32C7EF08F"/>
         <bpmn2:endEvent id="_56BEEFB2-E3D6-48E1-90DB-F62C1A4EFE65" drools:bgcolor="#ff6347" drools:selectable="true" name="">
